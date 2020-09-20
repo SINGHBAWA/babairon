@@ -1,7 +1,7 @@
 from flask import Flask, url_for
 from markupsafe import escape
-from flask import render_template
-
+from flask import render_template, request
+from .utils.email import EmailService
 
 app = Flask(__name__)
 
@@ -18,8 +18,17 @@ def about():
     return render_template('about.html', )
 
 
-@app.route('/contact.html')
+@app.route('/contact.html', methods=["GET", "POST"])
 def contact():
+    print(app)
+    if request.method == "POST":
+        name = request.form.get("name", "")
+        email = request.form.get("email", "")
+        phone = request.form.get("phone", "")
+        message = request.form.get("message", "")
+        message = f"Name: {name}\nEmail: {email}\nPhone: {phone}\nMessage:{message}"
+        EmailService(app).send_mail(email, message)
+
     return render_template('contact.html', )
 
 @app.route('/time.html')
