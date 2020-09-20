@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      {% block site_metas %}
+      <title>Baba Iron and cement store</title>
+      <link rel="shortcut icon" type="image/jpg" href="static/main/images/favicon.jpg"/>
+      <meta name="keywords" content="cement,tile,wall-tile,floor-tile">
+      <meta name="description" content="Bawa Iron And Cement Store - Good quality building material is available here ">
+      <meta name="author" content="">
+      {% endblock %}
+      {% include "partials/basic_metas.html" %}
+      {% include "partials/css_cdn.html" %}
+      {% include "partials/js_cdn.html" %}
+   </head>
+   <body {% if request.url in ["/", "/index.html"] %} id="home_page" class="home_page" {% else %} id="inner_page" {% endif %}>
+   {% include "partials/header.html" %}
+        {% block container %}
+        {% endblock %}
+   {% include "partials/footer.html" %}
+   </body>
+</html>
