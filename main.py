@@ -1,7 +1,7 @@
 from flask import Flask, url_for
 from markupsafe import escape
 from flask import render_template, request
-from .utils.email import EmailService
+from utils.email import EmailService
 
 app = Flask(__name__)
 
