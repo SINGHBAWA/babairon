@@ -14,6 +14,8 @@
    </head>
    <body {% if request.url in ["/", "/index.html"] %} id="home_page" class="home_page" {% else %} id="inner_page" {% endif %}>
    {% include "partials/header.html" %}
+   {% include "partials/message.html" %}
+
         {% block container %}
         {% endblock %}
    {% include "partials/footer.html" %}
