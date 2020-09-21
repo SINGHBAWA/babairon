@@ -27,7 +27,7 @@ def contact():
         phone = request.form.get("phone", "")
         message = request.form.get("message", "")
         message = f"Name: {name}\nEmail: {email}\nPhone: {phone}\nMessage:{message}"
-        EmailService(app).send_mail(email, message)
+        EmailService(app).send_mail(email, name, message)
 
     return render_template('contact.html', )
 

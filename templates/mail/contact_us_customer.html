@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block container %}
+      <!-- section -->
+      <section class="main_full inner_page">
+        <div class="container-fluid">
+          <div class="row">
+             <div class="full">
+               <h3>Thanks for contacting us</h3>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout_padding section about_dottat">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 text_align_center">
+                   <h5>Hi {name},</h5>
+                   <p>We are glad to know about your interest in our products.<br/> We are will reach you out as soon as possible.
+                       <br/>We are working on your query<br/>
+                        {{message}}
+                       <br/>Thanks you, <br/></p>
+                        <img src="static/main/images/logo.png" width="100" height="75">
+                   <p>Bawa Iron and Cement Store<br/>Nigohi, Shahjahanpur</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+         <!-- about section -->
+      <section class="layout_padding section about_dottat">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 text_align_center">
+                  <div class="full">
+                     <p class="large">We are a reckoned name, which is readily engaged in delivering Building Material at customers' premises. The offered range is known for acquiring one or more property, behavior, composition or performance. Compared to conventional material, the offered range is much more superior.</p>
+                  </div>
+               </div>
+
+                <div class="col-lg-4 text_align_center">
+                    <a target="_blank" href="https://www.facebook.com/Baba-iron-and-cement-store-103119651473473/" title="Facebook"><img width="75" height="75" src="static/main/images/facebook.svg" alt="facebook"/></a>
+                </div>
+               <div class="col-md-4">
+                  <div class="about_img margin_top_30  text_align_center">
+                     <img src="static/images/babairon/owner.png" height="250" width="250" alt="#" />
+                      <h4>Baldev Singh</h4>
+                  </div>
+               </div>
+                <div class="col-md-4">
+                  <div class="about_img margin_top_30  text_align_center">
+                     <img src="static/images/babairon/owner1.jpeg" alt="#" width="250" height="250" />
+                      <h4>Dilbag Singh</h4>
+                  </div>
+               </div>
+                <div class="col-md-4">
+                  <div class="about_img margin_top_30  text_align_center">
+                     <img src="static/images/babairon/owner2.jpeg" alt="#" width="250" height="250" />
+                      <h4>Akash Deep Singh</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end about section -->
+{% endblock %}
