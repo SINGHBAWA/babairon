@@ -1,9 +1,9 @@
-name: Asana Git
-uses: insurify/github-asana-action@v2.0.0
-description: 'Asana Github Actions'
+- name: Asana Github Actions
+  uses: everphone-gmbh/github-asana-action@385529c
+
 inputs:
   asana-pat:
-    description: '1/1188114868548560:67e8e0815543662b8571fd106affa645'
+    description: '1/1188114868548560:fe041f6047b1b9de259c8c4b78968c63'
     required: true
   task-comment:
     description: 'Pull Request created'
