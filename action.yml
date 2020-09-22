@@ -1,0 +1,20 @@
+name: Asana Git
+uses: insurify/github-asana-action@v2.0.0
+description: 'Asana Github Actions'
+inputs:
+  asana-pat:
+    description: 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdXRob3JpemF0aW9uIjoxMTk1MDM0NDc4OTM5NDk0LCJzY29wZSI6ImRlZmF1bHQgaWRlbnRpdHkiLCJzdWIiOjExODgxMTQ4Njg1NDg1NjAsImlhdCI6MTYwMDc0OTY0OSwiZXhwIjoxNjAwNzUzMjQ5fQ.qi-knBG6mYwqPIeSNaIQ6kgNojzSjmCINR-7Aq5bXho'
+    required: true
+  task-comment:
+    description: 'Pull Request created'
+    required: false
+  targets: '[{"project": "Baba iron and cement store", "section": "Done"}, {"project": "Current Sprint", "section": "In Review"}]'
+  trigger-phrase:
+    description: 'https://app.asana.com/'
+    required: true
+branding:
+  icon: 'chevron-right'
+  color: 'gray-dark'
+runs:
+  using: 'python3.6'
+  main: 'manage.py'
