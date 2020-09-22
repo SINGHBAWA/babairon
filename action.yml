@@ -3,7 +3,7 @@ uses: insurify/github-asana-action@v2.0.0
 description: 'Asana Github Actions'
 inputs:
   asana-pat:
-    description: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdXRob3JpemF0aW9uIjoxMTk1MDM0NDc4OTM5NDk0LCJzY29wZSI6ImRlZmF1bHQgaWRlbnRpdHkiLCJzdWIiOjExODgxMTQ4Njg1NDg1NjAsImlhdCI6MTYwMDc0OTY0OSwiZXhwIjoxNjAwNzUzMjQ5fQ.qi-knBG6mYwqPIeSNaIQ6kgNojzSjmCINR-7Aq5bXho'
+    description: '1/1188114868548560:67e8e0815543662b8571fd106affa645'
     required: true
   task-comment:
     description: 'Pull Request created'
